@@ -7,6 +7,7 @@ class EntradaDados:
         self.frame_entrada.columnconfigure((0,1), weight=1)
         self.frame_entrada.rowconfigure((0,1,2,3), weight=1)       
         
+        #entrda de dados X e Y
         self.label_X = ctk.CTkLabel(self.frame_entrada, text="X:")       
         self.text_X = ctk.CTkEntry(self.frame_entrada)        
         self.label_Y = ctk.CTkLabel(self.frame_entrada, text="Y:")        
@@ -29,7 +30,7 @@ class EntradaDados:
         
         
     def criar_tela(self) -> None:
-        self.frame_entrada.grid(row=1, column=0, columnspan=2, padx=10, sticky='nsew')
+        self.frame_entrada.grid(row=0, column=0, columnspan=2, padx=10, pady=40, sticky='nsew')
         
         self.label_X.grid(row=0, column=0, sticky='w', padx=(10,0))
         self.text_X.grid(row=0, column=0)
